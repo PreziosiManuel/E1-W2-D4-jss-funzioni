@@ -46,24 +46,29 @@ console.log("Ex 3: ", crazyDiff(18));
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
 */
-function 
-
-
-// function boundary(n) {
-//   if ((n >= 20 && n <= 100) || n === 400) return true;
-//   else {
-//     return false;
-//   }
-// }
-// console.log("Ex 4:", boundary(20));
+function boundary(n) {
+  if ((n >= 20 && n <= 100) || n === 400) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log("Ex 4: ", boundary(20));
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
  La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora deve
  ritornare la stringa originale senza alterarla.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+function epify(str) {
+  if (str.startsWith("EPICODE")) {
+    return str;
+  } else {
+    return str + "EPICODE";
+  }
+}
+console.log(epify("EPICODE"));
+console.log(epify("Prova "));
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
